@@ -1,4 +1,3 @@
-Let's perform a dry run of the MyQueue class code, explaining what happens at each line.
 class MyQueue {
 public:
     stack<int> input, output; // Declare two stacks: input for enqueue and output for dequeue.
@@ -46,17 +45,16 @@ public:
 };
 /**
  */
-
 Summary of Operations
-
 Push Operation (push(int x)): Elements are pushed onto the input stack. This operation runs in O(1) time.
+
 Pop Operation (pop()):
+
 If output is not empty, it pops the top element directly.
 If output is empty, it transfers all elements from input to output (reversing their order) and then pops the top element from output. This operation can take O(n) time in the worst case when transferring elements.
-
 Peek Operation (peek()):
-Similar to pop(), but it only retrieves the top element without removing it. It also can take O(n) time in the worst case when transferring elements.
 
+Similar to pop(), but it only retrieves the top element without removing it. It also can take O(n) time in the worst case when transferring elements.
 Empty Operation (empty()): Checks if both stacks are empty, which is an O(1) operation.
 
-This implementation effectively simulates a queue using two stacks, maintaining the FIFO (First-In-First-Out) behavior of a queue.
+This implementation effectively simulates a queue using two stacks, maintaining the FIFO (First-In-First-Out) behavior of a queue
