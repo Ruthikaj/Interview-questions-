@@ -1,3 +1,4 @@
+```cpp
 class MyQueue {
 public:
     stack<int> input, output; // Declare two stacks: input for enqueue and output for dequeue.
@@ -43,6 +44,10 @@ public:
         return output.empty() && input.empty(); // Return true if both stacks are empty.
     }
 };
+
+```
+
+
 /**
  */
 Summary of Operations
